@@ -1,0 +1,23 @@
+
+[project]
+name = ""
+version = ""
+description = ""
+authors = [
+    {name = "Nova-Noir", email = "n@ova.moe"},
+    {name = "Dian_Zh", email = "lxr784859747@gmail.com"},
+]
+dependencies = [
+    "fastapi[uvicorn]>=0.95.2",
+    "uvicorn>=0.22.0",
+    "beanie>=1.19.0",
+    "pydantic[email]>=1.10.7",
+    "passlib[bcrypt]>=1.7.4",
+    "python-jose[pycryptodome]>=3.3.0",
+    "python-multipart>=0.0.6",
+]
+requires-python = ">=3.10"
+license = {text = "MIT"}
+
+[tool.pdm.scripts]
+start = "python main.py"
